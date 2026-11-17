@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AIVISION 2027 - International Conference on Artificial Intelligence and Visual Intelligence</title>
+  <meta name="description" content= "International Conference on Artificial Intelligence and Visual Intelligence (AIVISION 2027) - April 29 - 30, 2027 at Chandigarh University Uttar Pradesh, Unnao, Uttar Pradesh, India">
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/logos/conference-logo.png" type="image/png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .slider-container {
+      max-width: 950px;
+      margin: 50px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card {
+      display: none;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    .card.active {
+      display: block;
+    }
+
+    .card h2 {
+      margin-bottom: 15px;
+      color: #333;
+      font-size: 24px;
+      border-left: 4px solid #0073e6;
+      padding-left: 10px;
+    }
+
+    .card p {
+      margin-bottom: 15px;
+      line-height: 1.6;
+      color: #444;
+      text-align: justify;
+    }
+
+    .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      opacity: 30%;
+      font-size: 28px;
+      background: #0073e6;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .arrow:hover {
+      background: #005bb5;
+
+    }
+
+    .arrow.left {
+      left: 15px;
+    }
+
+    .arrow.right {
+      right: 15px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+<body>
+  <!-- ===== HEADER ===== -->
+  <header>
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="container top-bar-content">
+        <div class="contact-info">
+          <span><i class="fas fa-envelope"></i> aivision@culko.in</span>
+          <span><i class="fas fa-calendar"></i> April 29 - 30, 2027</span>
+        </div>
+        <div class="social-links">
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Header -->
+    <div class="main-header">
+      <div class="container header-content">
+        <div class="logo-container">
+          <div class="conference-logo">
+            <img src="assets/images/logos/conference-logo.png" alt="AIVISION 2027 Logo" class="logo-img">
+            <div class="logo-text">
+              <h1>AIVISION 2027</h1>
+              <p>International Conference on Artificial Intelligence and Visual Intelligence</p>
+            </div>
+          </div>
+          <div class="university-logos">
+            <img src="assets/images/logos/cu-logo.png" alt="Chandigarh University Uttar Pradesh Logo" class="logo-img cu-logo">
+            <img src="assets/images/logos/Nova-Publishers.svg" alt="LNNS Logo" class="logo-img">
+            <!--<img src="assets/images/logos/springer-logo.png" alt="Springer Logo" class="logo-img springer-logo">-->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container nav-content">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li class="dropdown">
+            <a href="pages/committees.html">Committees <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="pages/organizing-committee.html">Organizing Committee</a></li>
+              <li><a href="pages/technical-program-committee.html">Technical Program Committee</a></li>
+              <li><a href="pages/international-advisory-committee.html">International Advisory Committee</a></li>
+              <li><a href="pages/national-advisory-committee.html">National Advisory Committee</a></li>
+              <li><a href="pages/all-pages.html">Other committees</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="pages/speakers.html">Speakers <i class="fas fa-chevron-down"></i></a>
+            <li class="dropdown">
+            </li>
+            <ul class="dropdown-menu">
+              <li><a href="pages/plenary.html">Plenary</a></li>
+              <li><a href="pages/keynote.html">Keynote</a></li>
+              <li><a href="pages/tutorial.html">Tutorial</a></li>
+            </ul>
+          </li>
+          <li><a href="pages/program.html">Program (TBA)</a></li>
+         
+           <li class="dropdown">
+            <a href="pages/payment.html">Registration & Payment Information <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+            <li><a href="pages/registration.html">Registration</a></li>
+            <li><a href="pages/payment.html">Payment information</a></li>
+            <li><a href="https://www.cuchd.in/conference/aivision27/registrationaivision2027.aspx" target="_blank" rel="noopener noreferrer">Payment Link</a></li>
+            </ul>
+            </li>
+          <li class="dropdown">
+            <a href="pages/events.html">Calls <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="pages/call-for-paper.html">Call for Paper</a></li>
+               <li><a href="#">Call for Workshops</a></li>
+              <li><a href="pages/callsponser.html">Call for Sponsorship</a></li>
+              
+            </ul>
+          </li>
+           <li><a href="pages/accepted-papers.html">Accepted Papers</a></li>
+          <li class="dropdown">
+            <a href="pages/paper-submission.html">Paper Submission <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+               <li><a href="pages/importantdates.html">Important Dates</a></li>
+    
+              <li><a href="pages/instruction-for-author.html">Instruction for Author</a></li>
+             
+              <li><a href="https://cmt3.research.microsoft.com/AIVISION 2027" target="_blank">Submit via Microsoft CMT</a></li>
+             
+            </ul>
+          </li>
+          <li><a href="pages/publication.html">Publication & Indexing</a></li>
+     
+          <li class="dropdown">
+            <a href="pages/venue.html">Venue <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="pages/venue.html">Conference Venue</a></li>
+              <li><a href="pages/highlights.html">Highlights</a></li>
+              <li><a href="pages/visa.html">VISA</a></li>
+            </ul>
+          </li>
+          <li><a href="pages/contact.html">Contact Us</a></li>
+        </ul>
+
+        <!-- Mobile menu toggle -->
+        <div class="mobile-toggle"><i class="fas fa-bars"></i></div>
+      </div>
+    </nav>
+  </header>
+<!-- ===== TICKER SECTION ===== -->
+<section class="ticker-section">
+  <div class="ticker-wrap">
+    <div class="ticker">
+      <a >📢 Post Conference Proceedings will be published in Nova Science (Pending Approval)</a>
+
+    </div>
+  </div>
+</section>
+  <!-- ===== MAIN CONTENT ===== -->
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-content">
+        <h2>International Conference on</h2>
+        <h1>Artificial Intelligence and Visual Intelligence</h1>
+<div class="conference-details">
+    <div><i class="fas fa-calendar-alt"></i> April 29 - 30, 2027</div>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <div><i class="fas fa-map-marker-alt"></i> Unnao, Uttar Pradesh, India</div>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <div><i class="fas fa-university"></i> Chandigarh University Uttar Pradesh</div>
+</div>        <div class="hero-buttons">
+          <a href="pages/registration.html" target="_blank" class="btn btn-primary">Register Now</a>
+          <a href="pages/call-for-paper.html" target="_blank" class="btn btn-secondary">Submit Paper</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Conference Theme -->
+    <section class="theme-section">
+      <div class="container">
+        <h2 class="section-header">Conference Theme</h2>
+   <div class="theme-content">
+                <h3>"Advancing Artificial Intelligence and Visual Intelligence for a Smarter, More Connected Future"</h3>
+
+    <p style="text-align: justify;">
+        At AIVISION 2027, researchers, academicians, industry professionals, technology innovators and visionaries from across the world come together to explore the transformative potential of Artificial Intelligence and Visual Intelligence. As intelligent technologies continue to reshape the way we perceive, interpret and interact with the world, this conference provides an international platform for sharing innovative ideas, groundbreaking research and emerging technological developments. Bringing together diverse perspectives and expertise, AIVISION 2027 aims to bridge the gap between theoretical advancements and practical applications, fostering innovation through intelligent visual computing.
+    </p>
+
+    <p style="text-align: justify;">
+        Visual intelligence is redefining the boundaries of modern technology. From machines that recognize and understand complex visual environments to intelligent systems capable of generating images, interpreting videos and supporting critical decisions, AI-powered vision technologies are opening new possibilities across disciplines. Advances in computer vision, deep learning, vision transformers, generative AI and multimodal intelligence are creating opportunities in healthcare, agriculture, industrial automation, smart cities, environmental monitoring and autonomous systems. At the same time, challenges involving accuracy, interpretability, reliability, scalability and responsible deployment demand continued research and collaboration.
+    </p>
+
+    <p style="text-align: justify;">
+        AIVISION 2027 places these emerging opportunities and challenges at the centre of its discussions. The conference encourages researchers to explore innovative architectures, intelligent algorithms, explainable models and real-world visual applications that can address complex societal and industrial problems. Through keynote lectures, research presentations and expert interactions, the event seeks to inspire collaboration, advance scientific knowledge and shape the future of trustworthy, efficient and human-centric Visual Intelligence.
+    </p>
+            </div>
+      </div>
+    </section>
+
+    <!-- About Conference -->
+   <section class="about-section">
+  <div class="container">
+    <h2 class="section-header">About the Conference</h2>
+    <div class="about-content">
+      <div class="about-text">
+           <p style="text-align: justify;">
+        The International Conference on Artificial Intelligence and Visual Intelligence (AIVISION 2027) is an international forum where researchers, academicians, technology innovators, industry experts, entrepreneurs, policy makers and students are invited to present and share their views on the latest developments in Artificial Intelligence and Visual Intelligence. The objective of the conference is to unite and share research trends, innovative methodologies, advanced computational models and applications of AI-powered visual technologies in scientific, engineering and industrial, healthcare, agricultural, environmental, financial, educational and societal research.
+    </p>
+
+   <p style="text-align: justify;">
+        The conference aims to maintain a balance between theory, methodology, experimentation and technology. It will provide a platform for researchers to share new algorithms, computational models, hybrid architectures, experimental studies, case studies, prototypes and application-oriented solutions. The programme will feature keynote speeches, technical paper presentations, expert panel discussions, demonstrations, poster presentations and networking opportunities to ensure meaningful academic and professional engagement.
+    </p>
+
+   <p style="text-align: justify;">
+        AIVISION 2027 will provide a forum for meaningful scientific exchange, collaborative research, knowledge sharing and technological advancement, highlighting the diverse dimensions of AI, vision and innovation. It aims to contribute to the development of reliable, explainable, efficient and application-oriented Artificial Intelligence and Visual Intelligence solutions.
+    </p>
+      </div>
+
+      <div class="about-image">
+        <img src="assets/images/backgrounds/CUUP-background.jpg" alt="Chandigarh University Campus">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Important Dates -->
+    <section class="dates-section">
+      <div class="container">
+        <h2 class="section-header">Important Dates</h2>
+        <div class="dates-content">
+          <div class="date-item"><i class="fas fa-paper-plane"></i> Paper Submission: Jan 30, 2027</div>
+          <div class="date-item"><i class="fas fa-envelope-open-text"></i> Acceptance: Feb 28, 2027</div>
+          <div class="date-item"><i class="fas fa-file-alt"></i> Camera Ready: March 15, 2027</div>
+          <div class="date-item"><i class="fas fa-credit-card"></i> Registration: March 30, 2027</div>
+          <div class="date-item"><i class="fas fa-credit-card"></i> Last Registration: April 10, 2027</div>
+          <div class="date-item"><i class="fas fa-calendar-week"></i> Conference: April 29 – 30, 2027</div>
+        </div>
+      </div>
+    </section>
+        <!-- About University Section -->
+    <section class="university-section">
+       <div class="slider-container">
+    <!-- Card 1 -->
+    <div class="card active">
+      <h2>About Chandigarh University Uttar Pradesh</h2>
+       <p style="text-align: justify;">
+        Envisioned to foster a culture of sustainability and empower future global leaders, Chandigarh University Uttar Pradesh Campus aims to immerse 21st-century learners in a personalized and experiential learning journey. The campus embraces a multidimensional and futuristic approach to education, integrating innovative learning practices with global humanistic values to prepare students for the evolving challenges and opportunities of the modern world.
+    </p>
+
+    <p style="text-align: justify;">
+        Chandigarh University Uttar Pradesh Campus carries forward the distinguished legacy of Chandigarh University, which has established itself as one of India's leading private universities through its commitment to innovative pedagogy, academic excellence and research-driven innovation. This legacy reflects a strong dedication to academic integrity, interdisciplinary excellence and nurturing the next generation of changemakers, innovators and skilled professionals capable of contributing meaningfully to society.
+    </p>
+
+    <p style="text-align: justify;">
+        With a vision to connect young minds' passions with their career aspirations, the AI-integrated CU Uttar Pradesh Campus offers a broad spectrum of industry-driven and futuristic academic programmes. Its educational approach emphasizes corporate mentorship, international perspectives, intellectual development, value-centric learning, community engagement, entrepreneurial development and professional competencies, enabling students to acquire the knowledge and skills required to excel in a rapidly evolving global environment.
+    </p>
+
+    <p style="text-align: justify;">
+        Supported by world-class infrastructure, sustainability-oriented facilities, state-of-the-art makerspaces, advanced research hubs, extensive international and industry collaborations, distinguished doctoral faculty and experienced industry mentors, Chandigarh University Uttar Pradesh Campus strives to provide a dynamic ecosystem for learning, research and innovation. The campus aims to equip learners with versatile, cross-disciplinary skills and prepare them to establish a strong professional presence in an increasingly competitive and technology-driven global landscape.
+    </p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <h2>About the Department</h2>
+      <p>
+       Working alongside major companies such as IBM helps shape direction through shared goals. Cloud, mobility, analytics - these fields mark pivotal shifts in how systems operate today. Shaped by rapid change, each domain influences modern infrastructure differently. Where cloud redefines access, mobility alters interaction patterns across devices. Meanwhile, analytics transforms raw information into actionable insight. Together, they form a foundation increasingly central to technological progress.
+      </p>
+      <p>
+      Among its offerings, the university provides dedicated spaces focused on cybersecurity. These environments support advanced work through targeted resources and structured access to the IBM software lab for emerging technologies, advancing new solutions in Big Data Analytics, Cloud Computing, and Business Education Research.
+      </p>
+      <p>
+        The Department Offers Futuristic Engineering Degree courses with industry-aligned specializations, emphasizing hands-on experience. By working on actual industry tasks, learning what has been tested before, students gain skills through detailed examples. This base stands firm through ongoing research. New tech shapes its core, while cyber defenses grow stronger alongside. Progress here links closely to innovation in digital safety practices. Its strengths place the department in a prime spot for organizing ICSTAIS 2026, combining knowledge from artificial intelligence setups with insights into protective security models.
+      </p>
+      <p>
+       Through partnerships with leading tech firms worldwide, the event maintains strong ties that support its ongoing success.
+      </p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+      <h2>About Centre of Excellence</h2>
+      <p>
+       The Centre of Excellence for Cybersecurity Privacy and Data Protection Interdisciplinary Hub at Chandigarh University was founded to push forward advanced studies, inventive thinking, and growth in practical abilities, among key domains tied to safeguarding digital systems. Created following a clear intent to build stronger national skills while encouraging partnerships between businesses and universities
+      </p>
+
+      <p>
+        The Centre works on advanced topics like Network Security, App Security, Cloud Protection, Device Safeguards, Monitoring Risks, Intelligence Digital Forensics, Post Quantum Cryptography, Zero Trust, and Buildings meet device safety. Where structures stand, machines connect securely.
+      </p>
+
+      <p>
+        Established through collaboration among international experts focused on digital security Leaders Palo Alto Networks, CheckPoint, Fortinet, CyberPeace Foundation - the Centre brings together academia, industry, and civil society to face new issues in safeguarding digital information, ensuring personal data stays secure, yet respecting individual privacy remains complex. Working with cutting-edge tools shapes how challenges get tackled outside textbooks. Solving actual issues grounds learning in experience rather than theory alone. Doing things physically builds understanding beyond what reading achieves. Through training, the Centre empowers students, researchers, and professionals to meet new digital dangers, which require homegrown strategies. Solutions emerge when local expertise tackles shifting risks. Facing modern attacks means building tools from within. Home-built responses adapt faster to changing threats. Creating internal methods strengthens defense over time.
+      </p>
+
+      <p>
+        With its unique blend of expertise and resources, the Centre is committed to creating impactful solutions that safeguard digital ecosystems, strengthen cyber resilience, and contribute to a secure and trustworthy 
+        cyberspace.
+      </p>
+    </div>
+
+    <!-- Arrows -->
+    <button class="arrow left" onclick="prevCard()">&#10094;</button>
+    <button class="arrow right" onclick="nextCard()">&#10095;</button>
+  </div>
+
+  <script>
+    let current = 0;
+    const cards = document.querySelectorAll('.card');
+
+    function showCard(index) {
+      cards.forEach((card, i) => {
+        card.classList.toggle('active', i === index);
+      });
+    }
+
+    function nextCard() {
+      current = (current + 1) % cards.length;
+      showCard(current);
+    }
+
+    function prevCard() {
+      current = (current - 1 + cards.length) % cards.length;
+      showCard(current);
+    }
+  </script>
+    </section>
+  </main>
+
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul class="footer-text">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pages/committees.html">Committees</a></li>
+          <li><a href="pages/speakers.html">Speakers</a></li>
+          <li><a href="pages/registration.html">Registration</a></li>
+          <li><a href="pages/venue.html">Venue</a></li>
+          <li><a href="pages/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Important Dates</h3>
+        <ul>
+          <li>Submission: Jan 30, 2027 </li>
+          <li>Acceptance: Feb 28, 2027</li>
+          <li>Camera Ready: March 15, 2027</li>
+          <li>Conference: April 29 – 30, 2027</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Contact</h3>
+<p><i class="fas fa-envelope"></i> <a href="mailto:aivision@culko.in">aivision@culko.in</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> Chandigarh University Uttar Pradesh,  27, Kanpur - Lucknow Rd, Unnao, Uttar Pradesh, India</p>
+      </div>
+      <div class="footer-column">
+        <h3>Connect</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your email address" required>
+          <button type="submit"><i class="fas fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2027 International Conference on Artificial Intelligence and Visual Intelligence (AIVISION 2027). All Rights Reserved.</p>
+      <div class="footer-logos">
+        <img src="assets/images/logos/cu-logo.png" alt="CU Logo">
+        <!--<img src="assets/images/logos/lnns.png" alt="LNNS Logo">-->
+        <!--<img src="assets/images/logos/springer-logo.png" alt="Springer Logo">-->
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+  <!-- JS -->
+  <script src="js/script.js"></script>
+</body>
+</html>
+
