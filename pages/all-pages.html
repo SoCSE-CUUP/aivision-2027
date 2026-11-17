@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>All Committees - AIVISION 2027</title>
+ <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f5f7fb;
+    color: #333;
+}
+
+/* HEADER */
+.header {
+    background: #1e3c72;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/* HERO */
+.page-header {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.page-header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.page-header p {
+    opacity: 0.9;
+}
+
+/* CONTAINER */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* GRID */
+.committees {
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+}
+
+/* CARD */
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, #1e3c72, #2a5298);
+    top: 0;
+    left: 0;
+}
+
+/* ICON */
+.icon {
+    font-size: 22px;
+    color: #2a5298;
+    margin-bottom: 10px;
+}
+
+/* TITLE */
+.card h2 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: #1e3c72;
+}
+
+/* ROLE */
+.role {
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* LIST */
+.card ul {
+    padding-left: 18px;
+}
+
+.card ul li {
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+/* FOOTER */
+.footer {
+    background: #1e3c72;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+</style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+  <header>
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="container top-bar-content">
+        <div class="contact-info">
+          <span><i class="fas fa-envelope"></i> aivision@culko.in</span>
+          <span><i class="fas fa-calendar"></i> April 29 - 30, 2027</span>
+        </div>
+        <div class="social-links">
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Header -->
+    <div class="main-header">
+      <div class="container header-content">
+        <div class="logo-container">
+          <div class="conference-logo">
+            <img src="../assets/images/logos/conference-logo.png"alt="AIVISION 2027 Logo" class="logo-img">
+            <div class="logo-text">
+              <h1>AIVISION 2027</h1>
+              <p>International Conference on Artificial Intelligence and Visual Intelligence</p>
+            </div>
+          </div>
+          <div class="university-logos">
+            <img src="../assets/images/logos/cu-logo.png" alt="Chandigarh University Uttar Pradesh Logo" class="logo-img cu-logo">
+            <img src="../assets/images/logos/Nova-Publishers.svg" alt="LNNS Logo" class="logo-img">
+            <!--<img src="assets/images/logos/springer-logo.png" alt="Springer Logo" class="logo-img springer-logo">-->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container nav-content">
+        <ul class="nav-menu">
+          <li><a href="../index.html" class="active">Home</a></li>
+          <li class="dropdown">
+            <a href="committees.html">Committees <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="organizing-committee.html">Organizing Committee</a></li>
+              <li><a href="technical-program-committee.html">Technical Program Committee</a></li>
+              <li><a href="international-advisory-committee.html">International Advisory Committee</a></li>
+              <li><a href="national-advisory-committee.html">National Advisory Committee</a></li>
+              <li><a href="all-pages.html">Other committees</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="speakers.html">Speakers <i class="fas fa-chevron-down"></i></a>
+            <li class="dropdown">
+            </li>
+            <ul class="dropdown-menu">
+              <li><a href="plenary.html">Plenary</a></li>
+              <li><a href="keynote.html">Keynote</a></li>
+              <li><a href="tutorial.html">Tutorial</a></li>
+            </ul>
+          </li>
+          <li><a href="program.html">Program (TBA)</a></li>
+         
+           <li class="dropdown">
+            <a href="payment.html">Registration & Payment Information <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+            <li><a href="registration.html">Registration</a></li>
+            <li><a href="payment.html">Payment information</a></li>
+            <li><a href="https://www.cuchd.in/conference/aivision27/registrationaivision2027.aspx" target="_blank" rel="noopener noreferrer">Payment Link</a></li>
+            </ul>
+            </li>
+          <li class="dropdown">
+            <a href="events.html">Calls <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="call-for-paper.html">Call for Paper</a></li>
+              
+                <li><a href="#">Call for Workshops</a></li>
+   
+              <li><a href="callsponser.html">Call for Sponsorship</a></li>
+              
+            </ul>
+          </li>
+           <li><a href="accepted-papers.html">Accepted Papers</a></li>
+          <li class="dropdown">
+            <a href="paper-submission.html">Paper Submission <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+               <li><a href="importantdates.html">Important Dates</a></li>
+    
+              <li><a href="instruction-for-author.html">Instruction for Author</a></li>
+             
+              <li><a href="https://cmt3.research.microsoft.com/aivision2027" target="_blank">Submit via Microsoft CMT</a></li>
+             
+            </ul>
+          </li>
+          <li><a href="publication.html">Publication & Indexing</a></li>
+     
+          <li class="dropdown">
+            <a href="venue.html">Venue <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="venue.html">Conference Venue</a></li>
+              <li><a href="highlights.html">Highlights</a></li>
+              <li><a href="visa.html">VISA</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+
+        <!-- Mobile menu toggle -->
+        <div class="mobile-toggle"><i class="fas fa-bars"></i></div>
+      </div>
+    </nav>
+  </header>
+<!-- ===== TICKER SECTION ===== -->
+<section class="ticker-section">
+  <div class="ticker-wrap">
+    <div class="ticker">
+      <a >📢 Post Conference Proceedings will be published in Nova Science (Pending Approval)</a>
+
+    </div>
+  </div>
+</section>
+<section class="page-header">
+    <h1>Conference Committees & Roles</h1>
+    <p>Structured governance ensuring academic excellence and global impact</p>
+</section>
+
+<div class="container">
+<div class="committees">
+
+<!-- 1 Steering -->
+<div class="card">
+<i class="fas fa-users icon"></i>
+<h2>Steering Committee</h2>
+<p class="role">Strategic Governance</p>
+
+<p><b>Members:</b></p>
+<ul>
+<li>To be Announce</li>
+</ul>
+</div>
+
+<!-- 2 Conference Chair -->
+<div class="card">
+<i class="fas fa-user-tie icon"></i>
+<h2>Conference Chair(s)</h2>
+<p class="role">Leadership & Execution</p>
+
+<p><b>Chairs:</b></p>
+<ul>
+<li>To be Announce</li>
+</ul>
+</div>
+
+<!-- 3 Program Chair -->
+<div class="card">
+<i class="fas fa-microscope icon"></i>
+<h2>Program Committee Chair</h2>
+<p class="role">Academic Quality Control</p>
+
+<p><b>Members:</b></p>
+<ul>
+<li>To be Announce</li>
+</ul>
+</div>
+
+<!-- 4 TPC -->
+<div class="card">
+<i class="fas fa-file-alt icon"></i>
+<h2>Technical Program Committee</h2>
+
+<p><b>Members:</b></p>
+<ul>
+<li>To be Announce</li>
+</ul>
+</div>
+
+<!-- 5 Publication -->
+<div class="card">
+<i class="fas fa-book icon"></i>
+<h2>Publication Chair</h2>
+
+<p><b>Members:</b></p>
+<ul>
+<li>To be Announce</li>
+</ul>
+</div>
+
+<!-- 6 Organizing -->
+<div class="card">
+<i class="fas fa-cogs icon"></i>
+<h2>Organizing Chair</h2>
+
+<p><b>Members:</b></p>
+<ul>
+<li>To be Announce</li>
+</ul>
+</div>
+
+<!-- 7 Finance -->
+<div class="card">
+<i class="fas fa-rupee-sign icon"></i>
+<h2>Finance Chair</h2>
+
+<p><b>Members:</b></p>
+<ul>
+<li>To be Announce</li>
+</ul>
+</div>
+
+<!-- 8 Sponsorship -->
+<div class="card">
+<i class="fas fa-handshake icon"></i>
+<h2>Sponsorship & Industry</h2>
+
+<p><b>Members:</b></p>
+<ul>
+<li>To be Announce</li>
+</ul>
+</div>
+
+<!-- 9 Publicity -->
+<div class="card">
+<i class="fas fa-bullhorn icon"></i>
+<h2>Publicity & Media</h2>
+
+<p><b>Chair:</b> To be Announce
+</p>
+</div>
+
+<!-- 10 Web -->
+<div class="card">
+<i class="fas fa-laptop-code icon"></i>
+<h2>Web & IT</h2>
+
+<p><b>Members:</b></p>
+<ul>
+<li>To be Announce</li>
+</ul>
+</div>
+
+<!-- 11 Registration -->
+<div class="card">
+<i class="fas fa-id-badge icon"></i>
+<h2>Registration</h2>
+
+<p><b>Members:</b></p>
+<ul>
+<li>To be Announce</li>
+</ul>
+</div>
+
+<!-- 12 Session -->
+<div class="card">
+<i class="fas fa-chalkboard-teacher icon"></i>
+<h2>Session & Track Chairs</h2>
+
+<p><b>Members:</b></p>
+<ul>
+<li>To be Announce</li>
+</ul>
+</div>
+
+<!-- 13 Keynote -->
+<div class="card">
+<i class="fas fa-microphone icon"></i>
+<h2>Keynote & Speakers</h2>
+
+<p><b>Members:</b></p>
+<ul>
+<li>To be Announce</li>
+</ul>
+</div>
+
+<!-- 14 Volunteers -->
+<div class="card">
+<i class="fas fa-user-graduate icon"></i>
+<h2>Student Volunteers</h2>
+
+<p><b>Chair:</b>To be Announce</p>
+</div>
+
+<!-- 15 Ethics -->
+<div class="card">
+<i class="fas fa-shield-alt icon"></i>
+<h2>Ethics & Compliance</h2>
+
+<p><b>Members:</b></p>
+<ul>
+<li>To be Announce</li>
+</ul>
+</div>
+
+<!-- 16 Local -->
+<div class="card">
+<i class="fas fa-map-marker-alt icon"></i>
+<h2>Local Organizing</h2>
+
+<p><b>Members:</b></p>
+<ul>
+<li>To be Announce</li>
+</ul>
+</div>
+
+<!-- 17 Awards -->
+<div class="card">
+<i class="fas fa-award icon"></i>
+<h2>Awards Committee</h2>
+
+<p><b>Members:</b></p>
+<ul>
+<li>To be Announce</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul class="footer-text">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pages/committees.html">Committees</a></li>
+          <li><a href="pages/speakers.html">Speakers</a></li>
+          <li><a href="pages/registration.html">Registration</a></li>
+          <li><a href="pages/venue.html">Venue</a></li>
+          <li><a href="pages/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Important Dates</h3>
+        <ul>
+          <li>Submission: Jan 30, 2027 </li>
+          <li>Acceptance: Feb 28, 2027</li>
+          <li>Camera Ready: March 15, 2027</li>
+          <li>Conference: April 29 – 30, 2027</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Contact</h3>
+<p><i class="fas fa-envelope"></i> <a href="mailto:aivision@culko.in">aivision@culko.in</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> Chandigarh University Uttar Pradesh,  27, Kanpur - Lucknow Rd, Unnao, Uttar Pradesh, India</p>
+      </div>
+      <div class="footer-column">
+        <h3>Connect</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your email address" required>
+          <button type="submit"><i class="fas fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2027 International Conference on Artificial Intelligence and Visual Intelligence (AIVISION 2027). All Rights Reserved.</p>
+      <div class="footer-logos">
+                    <img src="../assets/images/logos/cu-logo.png" alt="Chandigarh University uttar Pradesh Logo">
+                     <img src="../assets/images/logos/Nova-Publishers.svg" alt=" Logo">
+        <!--<img src="assets/images/logos/springer-logo.png" alt="Springer Logo">-->
+      </div>
+    </div>
+  </footer>
+
+
+
+</body>
+</html>
