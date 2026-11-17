@@ -1,6 +1,6 @@
-ICSTAIS2026 Conference Website: https://chandigarhuniv.github.io/ICSTAIS2026/index.html
+"AIVISION 2027 Conference Website" https://github.com/SoCSE-CUUP/AIVISION2027/index.html
 
-This is a complete standalone HTML/CSS/JS project for the International Conference on Secure and Trustworthy Artificial Intelligence Systems (ICSTAIS2026).
+This is a complete standalone HTML/CSS/JS project for the International Conference on Artificial Intelligence and Visual Intelligence (AIVISION2027).
 
 File Structure:
 icstais2026/
